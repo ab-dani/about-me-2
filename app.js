@@ -5,28 +5,31 @@ let username = "antonio";
 let username1 = prompt("What's your name?");
 alert(`Welcome to my site ${username1} ! Let's play a game`);
 
-let questionOneGuess = prompt(
-  `Is my favorite drink a chai latte? Answer y/n or yes/no`
+function questionOne() {
+  let questionOneGuess = prompt(
+  'Is my favorite drink a chai latte? Answer y/n or yes/no?'
 ).toLowerCase();
-
 console.log(questionOneGuess);
-
-if (questionOneGuess === "y" || questionOneGuess === "yes") {
-  alert("You are correct!");
-} else if (questionOneGuess === "n" || questionOneGuess === "no") {
-  alert("Sorry that's incorrect");
+if (questionOneGuess === 'y' || questionOneGuess === 'yes') {
+  alert('You are correct!');
+} else if (questionOneGuess === 'n' || questionOneGuess === 'no') {
+  alert(`Sorry that's incorrect`);
 }
+}
+function questionOne()
 
-let questionTwoGuess = prompt(`Are you a forex trader ?`).toLpperCase();
-
-console.log(questionTwoGuess);
+function forex() {
+let questionTwoGuess = prompt(`Are you a forex trader ?`).toLpperCase();console.log(questionTwoGuess);
 
 if (questionTwoGuess === "Y" || questionTwoGuess === "yes") {
   alert("You are correct! Go make some money !");
 } else if (questionTwoGuess === "N" || questionTwoGuess === "no") {
   alert("Sorry. Take your time and learn.");
 }
+} 
+  function forex()
 
+function millionaire() {
 let questionThreeGuess = prompt(`Are you a future millionaire? `).toLowerCase();
 
 console.log(questionThreeGuess);
@@ -36,7 +39,11 @@ if (questionThreeGuess === "Y" || questionThreeGuess === "yes") {
 } else if (questionThreeGuess === "N" || questionThreeGuess === "no") {
   alert("Yes I am. I'm going to keep striving. ");
 }
+}
+  function millionaire()
 
+
+function maddenGame() {
 let questionFourGuess = prompt(
   `Did you win yesterday a game of Madden?`
 ).toLowerCase();
@@ -48,7 +55,9 @@ if (questionFourGuess === "Y" || questionFourGuess === "yes") {
 } else if (questionFourGuess === "N" || questionFourGuess === "no") {
   alert("It is ok you will do better next time ! ");
 }
+} function maddenGame()
 
+function selfCare () {
 let questionFiveGuess = prompt(
   `Did you practive self care today?`
 ).toLowerCase();
@@ -60,3 +69,5 @@ if (questionFiveGuess === "Y" || questionFiveGuess === `yes`) {
 } else if (questionFiveGuess === "N" || questionFiveGuess === "no") {
   alert("It is ok you will get there. Keep trying! ");
 }
+
+} function selfCare()
