@@ -18,8 +18,10 @@ if (questionOneGuess === 'y' || questionOneGuess === 'yes') {
 }
 function questionOne()
 
+
 function forex() {
 let questionTwoGuess = prompt(`Are you a forex trader ?`).toLpperCase();console.log(questionTwoGuess);
+console.log(questionTwoGuess);
 
 if (questionTwoGuess === "Y" || questionTwoGuess === "yes") {
   alert("You are correct! Go make some money !");
@@ -71,3 +73,53 @@ if (questionFiveGuess === "Y" || questionFiveGuess === `yes`) {
 }
 
 } function selfCare()
+let questionSixGuess = null;
+
+var correctAnswer = 12;
+var attempts = 4;
+while (questionSixGuess != correctAnswer) {
+  if (attempts === 0) {
+    alert("You're out of attempts. Correct answer is " + correctAnswer);
+    break;
+  }
+  questionSixGuess = parseInt(prompt(`Guess the number I am thinking?`));
+  if (questionSixGuess === correctAnswer) {
+    alert("You are correct! Great job!");
+  } else if (questionSixGuess > correctAnswer) {
+    alert("You're too high!");
+  } else if (questionSixGuess < correctAnswer) {
+    alert("You're too low!");
+  }
+  attempts--;
+}
+
+let array = [
+  "nashville",
+  "tampa",
+  "miami",
+  "new orleans",
+  "houston",
+  "los angelos",
+  "phoenix",
+  "seattle",
+];
+let questionSevenGuess = null;
+var attemptsCity = 6;
+questionsevenWhileloop: while (attemptsCity != 0) {
+  attemptsCity--
+  questionSevenGuess = prompt(
+    `Guess the city I am thinking about?`
+  ).toLowerCase();
+  for (let i = 0; i < array.length; i++) {
+    if (questionSevenGuess === array[i]) {
+      alert("You are correct! Good job!")
+      break questionsevenWhileloop
+    }
+  
+  }
+ alert("Nope You're wrong!");
+ if (attemptsCity = 0){
+  alert("You are out of attempts");
+ } 
+}
+
